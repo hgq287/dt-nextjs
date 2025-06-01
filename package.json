@@ -1,29 +1,22 @@
 {
-    "name": "nextjs-redux-template",
-    "version": "1.0.0",
-    "description": "Template for Front-end web development, inspired by Nextjs and Redux",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "keywords": [
-        "next.js",
-        "front-end web development",
-        "socket",
-        "server-side-rendering"
-    ],
-    "author": "Hung Q.",
-    "license": "MIT",
-    "dependencies": {
-        "next": "^14.1.4",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    },
-    "devDependencies": {
-        "@types/node": "20.12.2",
-        "@types/react": "18.2.73",
-        "typescript": "5.4.3"
-    }
+  "name": "dt-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
 }
