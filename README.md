@@ -1,12 +1,89 @@
 # dt-nextjs
 
-# License
-The MIT License (MIT)
+A modern, professional-grade **Next.js 15+** starter template using **TypeScript**. It provides clean project structure, built-in light/dark theming (without Tailwind), and custom authentication flows using JWT.
 
-Copyright (C) 2025, Hung Q. Truong. https://hgq287.com. All rights reserved.
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Features
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+- `src/` folder structure for scalability
+- Sign In / Sign Up pages
+- JWT authentication (stored in `localStorage`)
+- React Context for auth and theme management
+- Light/Dark mode using CSS variables
+- HeaderBar component and reusable UI
+- Plain CSS styling (no Tailwind or UI framework)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+---
+
+## Folder Structure
+
+```
+src/
+├── app/                # Next.js App Router pages
+│   ├── layout.tsx      # Global layout with Theme/Auth Providers
+│   ├── page.tsx        # Landing page
+│   ├── signin/         # Sign In page
+│   └── signup/         # Sign Up page
+├── components/         # UI components (e.g., HeaderBar, ThemeToggle)
+├── contexts/           # React Context (AuthContext, ThemeContext)
+├── styles/             # CSS (globals.css with variables)
+├── features/           # Business logic (e.g. auth)
+├── redux/              # (Optional) Redux Toolkit setup
+└── types/              # Shared TypeScript types
+```
+
+---
+
+## Getting Started
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/hgq287/dt-nextjs.git
+
+# 2. Install dependencies
+cd dt-nextjs
+yarn
+
+# 3. Run the development server
+yarn dev
+```
+
+Visit `http://localhost:3000` to view the app.
+
+---
+
+## Screenshots
+
+| Page       | Dark Mode | Auth Flow |
+|------------|-----------|-----------|
+| ✅ Sign In | ✅ Toggle | ✅ JWT Stub |
+
+(You can add real screenshots here)
+
+---
+
+## Tech Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Custom CSS (no Tailwind)
+- **Auth**: JWT + `localStorage`
+- **State Management**: React Context (Redux optional)
+- **Deployment**: Vercel or static hosting
+
+---
+
+## Future Improvements
+
+- [ ] Add Axios-based API client
+- [ ] Form validation with React Hook Form + Zod
+- [ ] Auth guard + route protection
+- [ ] Redux setup example
+- [ ] E2E tests with Playwright
+
+---
+
+## License
+
+**MIT** License. Feel free to fork, contribute, and build amazing things.
